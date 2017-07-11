@@ -1,0 +1,11 @@
+/node_modules
+/src
+/test
+
+.eslintrc
+.gitignore
+gulpfile.js
+karma.conf.js
+template.html
+test.html
+webpack.config.js

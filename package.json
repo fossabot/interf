@@ -1,7 +1,7 @@
 {
   "name": "interf",
   "title": "Interf",
-  "description": "interf dev, javascript interfaces instances implementation",
+  "description": "A javascript library for determine whether a object is an instantiated of a class that implements an interface",
   "version": "1.0.0",
   "versionsList": [
     "1.0.0"
@@ -35,10 +35,12 @@
   },
   "license": "MIT",
   "readmeFilename": "README.md",
+  "readme": "README.md",
   "scripts": {
     "test": "gulp test && node ./test/node_qunit.js",
     "dev": "nodemon --watch webpack.config.js ./node_modules/.bin/webpack-dev-server --env=dev",
-    "build": "gulp"
+    "build": "gulp",
+    "publish": "git push && npm publish"
   },
   "devDependencies": {
     "babel-core": "^6.24.1",
