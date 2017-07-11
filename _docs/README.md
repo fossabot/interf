@@ -31,8 +31,8 @@ Quackable.isInterfaceOf(donald); // true
 
 ## Download
 
-* :fa-download: [Core build](//raw.githubusercontent.com/{{ site.repository }}/master/dist/interf-core.js) ([~2kB gzipped](//raw.githubusercontent.com/{{ site.repository }}/master/dist/interf-core.min.js))
-* :fa-download: [Full build](//raw.githubusercontent.com/{{ site.repository }}/master/dist/interf.js) ([~4kB gzipped](//raw.githubusercontent.com/{{ site.repository }}/master/dist/interf.min.js))
+* :fa-download: [Core build](https://raw.githubusercontent.com/shvabuk/interf/master/dist/interf-core.js) ([~2kB gzipped](https://raw.githubusercontent.com/shvabuk/interf/master/dist/interf-core.min.js))
+* :fa-download: [Full build](https://raw.githubusercontent.com/shvabuk/interf/master/dist/interf.js) ([~4kB gzipped](https://raw.githubusercontent.com/shvabuk/interf/master/dist/interf.min.js))
 * :fa-cloud-download: [CDN copies](#)
 
 ## Installation
@@ -86,6 +86,7 @@ interf.configure({
   mixin: {
     // warn: false, // if not defined, will be same as in parent scope
     // debug: false, // if not defined, will be same as in parent scope
+    // callbacks: {}, // if not defined, will be same as in parent scope
     createInit: true, // create initMixins method in target prototype
     interfaces: true,
     replace: true,
@@ -128,4 +129,4 @@ Tested in:
 
 ## License
 
-Interf is released under the [MIT license](//raw.githubusercontent.com/{{ site.repository }}/master/LICENSE.txt)
+Interf is released under the [MIT license](//raw.githubusercontent.com/shvabuk/interf/master/LICENSE.txt)

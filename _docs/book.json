@@ -2,7 +2,7 @@
   "gitbook": "3.2.2",
   "title": "Interf",
   "author": "Shvab Ostap",
-  "plugins": ["theme-default", "-highlight", "edit-link", "github", "anchorjs", "ga"],
+  "plugins": ["theme-default", "-highlight", "github", "anchorjs", "ga"],
   "pluginsConfig": {
     "sharing": {
       "facebook": true,
