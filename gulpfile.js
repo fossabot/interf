@@ -17,11 +17,11 @@ const runSequence = require('run-sequence');
 const composerUglify = require('gulp-uglify/composer');
 
 const minifyES = composerUglify(uglifyES, console);
-// var esprima = require('esprima');
 
 const isWin = /^win/.test(process.platform);
 
 const pkg = require(path.join(__dirname, './package.json'));
+// TODO: change this regex
 const generEndReg = str =>
   `(${str.split('').map((char, index) => `${str.substr(0, index)}[^${char}]`).join('|')})*${str}`;
 const reNotCore = new RegExp(`@NOT_CORE_BEGIN@${generEndReg('@NOT_CORE_END@')}`, 'gm');

@@ -1,20 +1,10 @@
-# <span class="logo">[INTERF](https://shvabuk.github.io/interf) </span>
+# [INTERF](https://shvabuk.github.io/interf)
 
 Interf is [fast](performance.md) and small javascript library.
 It makes possible to determine whether a object is an instantiated of a class that implements an interface.
-And it is possible to copy class and class.prototype properties by :F: [mix().in()](api/mixin/mix-in.md) too.
+And it is possible to copy class and class.prototype properties by [mix().in()](api/mixin/mix-in.md) too.
 
-<a href="#"><img alt="Badge" src="https://img.shields.io/badge/interfaced-It is about 20% reliable and cooler-518a07.svg?style=flat-square"></a> <a href="#"><img alt="Badge" src="https://img.shields.io/badge/test-badge-518a07.svg?style=flat-square"></a> <a href="#"><img alt="Badge" src="https://img.shields.io/badge/test-badge-518a07.svg?style=flat-square"></a> <a href="#"><img alt="Badge" src="https://img.shields.io/badge/test-badge-518a07.svg?style=flat-square"></a> <a href="#"><img alt="Badge" src="https://img.shields.io/badge/test-badge-518a07.svg?style=flat-square"></a> <a href="#"><img alt="Badge" src="https://img.shields.io/badge/test-badge-518a07.svg?style=flat-square"></a> <a href="#"><img alt="Badge" src="https://img.shields.io/badge/test-badge-518a07.svg?style=flat-square"></a> <a href="#"><img alt="Badge" src="https://img.shields.io/badge/test-badge-518a07.svg?style=flat-square"></a>
-
-## [API](https://shvabuk.github.io/interf/docs) symbols roadmap
-
-* :I: Interface
-* :C: Class
-* :A: Array
-* :S: String
-* :B: Boolean
-* :F: Function
-* :O: Object
+## [API Docs](https://shvabuk.github.io/interf/docs)
 
 ## Basic usage
 
@@ -31,9 +21,9 @@ Quackable.isInterfaceOf(donald); // true
 
 ## Download
 
-* :fa-download: [Core build](//raw.githubusercontent.com/{{ site.repository }}/master/dist/interf-core.js) ([~2kB gzipped](//raw.githubusercontent.com/{{ site.repository }}/master/dist/interf-core.min.js))
-* :fa-download: [Full build](//raw.githubusercontent.com/{{ site.repository }}/master/dist/interf.js) ([~4kB gzipped](//raw.githubusercontent.com/{{ site.repository }}/master/dist/interf.min.js))
-* :fa-cloud-download: [CDN copies](#)
+* [Core build](//raw.githubusercontent.com/shvabuk/interf/master/dist/interf-core.js) ([~2kB gzipped](//raw.githubusercontent.com/shvabuk/interf/master/dist/interf-core.min.js))
+* [Full build](//raw.githubusercontent.com/shvabuk/interf/master/dist/interf.js) ([~4kB gzipped](//raw.githubusercontent.com/shvabuk/interf/master/dist/interf.min.js))
+* [CDN copies](#)
 
 ## Installation
 
@@ -118,14 +108,14 @@ interf.configure({
 
 ## Support
 Tested in:
-* :fa-chrome: Chrome 58 - 59
-* :fa-firefox: Firefox 54
-* :fa-internet-explorer: IE 9 - 11
-* :fa-safari: Safari 5.1.7
-* :fa-opera: Opera 45
-* :fa-server: Node.js 6
-* :fa-server: PhantomJS 2.1.14
+* Chrome 58 - 59
+* Firefox 54
+* IE 9 - 11
+* Safari 5.1.7
+* Opera 45
+* Node.js 6
+* PhantomJS 2.1.14
 
 ## License
 
-Interf is released under the [MIT license](//raw.githubusercontent.com/{{ site.repository }}/master/LICENSE.txt)
+Interf is released under the [MIT license](//raw.githubusercontent.com/shvabuk/interf/master/LICENSE.txt)

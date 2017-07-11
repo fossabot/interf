@@ -2,9 +2,9 @@
   "name": "interf",
   "title": "Interf",
   "description": "interf dev, javascript interfaces instances implementation",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "versionsList": [
-    "0.0.0"
+    "1.0.0"
   ],
   "main": "dist/interf.js",
   "homepage": "https://shvabuk.github.io/interf",

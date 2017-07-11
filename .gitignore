@@ -29,4 +29,3 @@ composer.lock
 /test/tmp
 /test/coverage
 /test/size
-/dist
