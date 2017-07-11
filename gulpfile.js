@@ -21,11 +21,8 @@ const minifyES = composerUglify(uglifyES, console);
 const isWin = /^win/.test(process.platform);
 
 const pkg = require(path.join(__dirname, './package.json'));
-// TODO: change this regex
-const generEndReg = str =>
-  `(${str.split('').map((char, index) => `${str.substr(0, index)}[^${char}]`).join('|')})*${str}`;
-const reNotCore = new RegExp(`@NOT_CORE_BEGIN@${generEndReg('@NOT_CORE_END@')}`, 'gm');
-// /@NOT_CORE_BEGIN@([^@]|@[^N]|@N[^O]|@NO[^T]|@NOT[^_]|@NOT_[^C]|@NOT_C[^O]|@NOT_CO[^R]|@NOT_COR[^E]|@NOT_CORE[^_]|@NOT_CORE_[^E]|@NOT_CORE_E[^N]|@NOT_CORE_EN[^D]|@NOT_CORE_END[^@])*@NOT_CORE_END@/gm;
+
+const reNotCore = /@NOT_CORE_BEGIN@(\r|\n|.)*(?!@NOT_CORE_END@).*@NOT_CORE_END@/gm;
 
 const minifyOptions = {
   warnings: true,
@@ -61,16 +58,6 @@ function sizeCompare(fileName) {
 }
 
 gulp.task('es5', () => {
-  // save comment with @license
-  // const reg = /\/\*([^\*]|\*[^\/])*@license([^\*]|\*[^\/])*\*\//gm;
-  // const src = 'src/interf.js';
-  // const content = fs.readFileSync(src, 'utf8');
-  // let licenseComment = '';
-  // while ((match = reg.exec(content)) != null) {
-  //     licenseComment = match[0];
-  //     if (licenseComment) break;
-  // }
-
   return (
     gulp
       .src('src/*.js')
@@ -78,16 +65,8 @@ gulp.task('es5', () => {
       .pipe(replace(/\$VERSION_COUNT\$/gm, pkg.versionsList.length))
       .pipe(iife())
       .pipe(sourcemaps.init())
-      // .pipe(replace(licenseComment, ''))
       .pipe(
         babel({
-          // sourceType: 'script',
-          // sourceMaps: true,
-          // generatorOpts: {
-          //     // retainFunctionParens: true,
-          //     sourceMaps: true
-          // },
-          // presets: ['es2015'],
           plugins: [
             'check-es2015-constants',
             'transform-es2015-arrow-functions',
@@ -102,22 +81,22 @@ gulp.task('es5', () => {
             'transform-es2015-for-of',
             'transform-es2015-function-name',
             'transform-es2015-literals',
-            // 'transform-es2015-modules-commonjs', // Webpack modules are slow
-            // 'transform-es2015-modules-umd',
+            // modules are build in script
             'transform-es2015-object-super',
-            'transform-es2015-parameters', // trailingComma es2015 are slow
+            'transform-es2015-parameters',
             'transform-es2015-shorthand-properties',
             'transform-es2015-spread',
             'transform-es2015-sticky-regex',
             'transform-es2015-template-literals',
-            // 'transform-es2015-typeof-symbol', // this add unneessary _typeof() func, works slow and contain some space
+            // typeof-symbol add unneessary _typeof() func
+            // works slow and contain some space
+            // 'transform-es2015-typeof-symbol',
             'transform-es2015-unicode-regex',
             'transform-regenerator',
           ],
         })
       )
-      // .pipe(replace(/^/, licenseComment+'\n;'))
-      .pipe(buble())
+      .pipe(buble()) // used for classes
       .pipe(sourcemaps.write('./'))
       .pipe(gulp.dest('dist'))
   );
@@ -158,7 +137,8 @@ gulp.task('es', () =>
     .pipe(
       babel({
         plugins: [
-          'transform-es2015-parameters', // trailingComma es2015 are slow
+          // trailingComma es2015 are slow
+          'transform-es2015-parameters',
         ],
       })
     )
@@ -250,9 +230,9 @@ gulp.task('dev-karma', done => {
   new KarmaServer(
     {
       configFile: path.join(__dirname, './karma.conf.js'),
-      // files: testsFiles.concat(testFilesInterfs, ['test/karma-exec.js']),
-      files: moduleFiles('CJS'),
-      browsers: ['IE9'],
+      files: testsFiles.concat(testFilesInterfs, ['test/karma-exec.js']),
+      // files: moduleFiles('CJS'),
+      browsers: ['Firefox'],
       singleRun: false,
       client: {
         captureConsole: true,

@@ -29,3 +29,4 @@ composer.lock
 /test/tmp
 /test/coverage
 /test/size
+!/test/size/README.md

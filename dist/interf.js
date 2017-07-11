@@ -94,7 +94,7 @@
 
   // main object
   var interf = {
-    // integer count of all versions, current version: 0.0.0
+    // integer count of all versions, current version: 1.0.0
     VERSION: 1,
     _config: {
       // use interf.configure to set config values
