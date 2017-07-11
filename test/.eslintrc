@@ -1,6 +1,0 @@
-{
-    "globals": {
-        "QUnit": true,
-        "interf": true
-    }
-}

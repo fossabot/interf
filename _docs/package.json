@@ -1,0 +1,35 @@
+{
+  "name": "interf-github-pages",
+  "version": "1.0.0",
+  "description": "Interf github pages",
+  "author": {
+    "name": "Shvab Ostap",
+    "email": "shvabuk@gmail.com"
+  },
+  "scripts": {
+    "docs:prepare": "gitbook install",
+    "docs:watch": "npm run docs:prepare && gitbook serve . ../docs --port 4001",
+    "docs:home": "cd .. && bundle exec jekyll serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shvabuk/interf.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shvabuk/interf/issues"
+  },
+  "homepage": "https://github.com/shvabuk/interf/tree/gh-pages/docs",
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb": "^15.0.1",
+    "eslint-config-prettier": "^2.1.1",
+    "eslint-plugin-import": "^2.3.0",
+    "eslint-plugin-jsx-a11y": "^5.0.3",
+    "eslint-plugin-prettier": "^2.1.1",
+    "eslint-plugin-react": "^7.1.0",
+    "gitbook-cli": "^2.3.0",
+    "prettier": "^1.4.4"
+  }
+}

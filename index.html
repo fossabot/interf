@@ -1,0 +1,127 @@
+---
+layout: default
+---
+<div class="hero">
+    <div class="container">
+        <div class="row">
+            <h1 class="logo">INTERF</h1>
+            <p>A JAVASCRIPT LIBRARY FOR DETERMINE WHETHER A OBJECT IS AN INSTANTIATED OF A CLASS THAT IMPLEMENTS AN INTERFACE</p>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+
+    <div class="row">
+            <!-- TODO: Baners -->
+            <p class="text-center">
+            <a href="#"><img alt="Badge" src="https://img.shields.io/badge/interfaced-It is about 20% reliable and cooler-518a07.svg?style=flat-square"></a>
+            <a href="#"><img alt="Badge" src="https://img.shields.io/badge/test-badge-518a07.svg?style=flat-square"></a>
+            <a href="#"><img alt="Badge" src="https://img.shields.io/badge/test-badge-518a07.svg?style=flat-square"></a>
+            <a href="#"><img alt="Badge" src="https://img.shields.io/badge/test-badge-518a07.svg?style=flat-square"></a>
+            <a href="#"><img alt="Badge" src="https://img.shields.io/badge/test-badge-518a07.svg?style=flat-square"></a>
+            <a href="#"><img alt="Badge" src="https://img.shields.io/badge/test-badge-518a07.svg?style=flat-square"></a>
+            <a href="#"><img alt="Badge" src="https://img.shields.io/badge/test-badge-518a07.svg?style=flat-square"></a>
+            <a href="#"><img alt="Badge" src="https://img.shields.io/badge/test-badge-518a07.svg?style=flat-square"></a>
+        </p>
+    </div>
+    
+    <div class="row">
+
+        <div class="col"><div class="col-wrap">
+            <h2>Download</h2>
+            <p>
+                <ul>
+                    <li>
+                        <i class="fa fa-download" aria-hidden="true"></i>
+                        <a href="//raw.githubusercontent.com/om/{{ site.repository }}/master/dist/interf-core.js">Core build</a>
+                        (<a href="//raw.githubusercontent.com/{{ site.repository }}/master/dist/interf-core.min.js">~2kB gzipped</a>)
+                    </li>
+                    <li>
+                        <i class="fa fa-download" aria-hidden="true"></i>
+                        <a href="//raw.githubusercontent.com/{{ site.repository }}/master/dist/interf.js">Full build</a>
+                        (<a href="//raw.githubusercontent.com/{{ site.repository }}/master/dist/interf.min.js">~4kB gzipped</a>)
+                    </li>
+                    
+                    <li><i class="fa fa-cloud-download" aria-hidden="true"></i>
+                        <a href="#">CDN copies</a>
+                        <!-- TODO: -->
+                    </li>
+                </ul>
+            </p>
+        </div></div>
+
+        <div class="col"><div class="col-wrap">
+            <h2>What is <span class="noto-sans">INTERF</span>?</h2>
+
+            <p>
+                Interf is <a href="docs/performance.html">fast</a> and small javascript library.<br>
+                It makes possible to determine whether a object is an instantiated of a class that implements an interface.<br>
+                And it is possible to copy class and class.prototype properties by <a href="docs/api/mixin/mix-in.html">mix().in()</a> too.
+            </p>
+        </div></div>
+
+        <div class="col"><div class="col-wrap">
+            <h2>Installation</h2>
+
+            <p>Using npm:</p>
+            <pre><code class="shell">$ npm install --save interf</code></pre>
+
+            <p>In Node.js:</p>
+            <pre><code class="javascript">const interf = require('interf');</code></pre>
+
+            <p>In a browser:</p>
+            <pre><code class="html">&lt;script src="interf.js"&gt;&lt;/script&gt;</code></pre>
+        </div></div>
+
+
+        <div class="col"><div class="col-wrap">
+            <h2>Support</h2>
+            <p>
+                Tested in:
+                <ul>
+                    <li><i class="fa fa-chrome" aria-hidden="true"></i> Chrome 58 - 59</li>
+                    <li><i class="fa fa-firefox" aria-hidden="true"></i> Firefox 54</li>
+                    <li>
+                        <i class="fa fa-internet-explorer" aria-hidden="true"></i>
+                        IE 9 - 11
+                    </li>
+                    <!--<li><i class="fa fa-edge" aria-hidden="true"></i> Edge TODO</li>-->
+                    <li><i class="fa fa-safari" aria-hidden="true"></i> Safari 5.1.7</li>
+                    <li><i class="fa fa-opera" aria-hidden="true"></i> Opera 45</li>
+                    <li><i class="fa fa-server" aria-hidden="true"></i> Node.js 6</li>
+                    <li><i class="fa fa-server" aria-hidden="true"></i> PhantomJS 2.1.14</li>
+                </ul>
+            </p>
+        </div></div>
+
+
+
+        
+        <div class="col col-col2"><div class="col-wrap">
+            <h2>Basic usage</h2>
+
+            <pre><code class="javascript">// create interface
+const Quackable = interf.create('Quackable');
+// bind interface
+const Duck = interf.implement(Quackable).in(class Duck {});
+// create instance
+const donald = new Duck();
+// test instance
+Quackable.isInterfaceOf(donald); // true</code></pre>
+            <p>
+                Visit <a href="docs">Api Docs</a> for more information.
+            </p>
+        </div></div>
+
+
+
+        <div class="col"><div class="col-wrap">
+            <h2>License</h2>
+            <p>
+                Interf is released under the <a href="//raw.githubusercontent.com/{{ site.repository }}/master/LICENSE.txt">MIT license</a>
+            </p>
+        </div></div>
+
+    </div>
+</div>

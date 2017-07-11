@@ -1,0 +1,24 @@
+title: Interf
+description: >
+  A javascript library for checking interfaces instances
+baseurl: ""
+url: "https://shvabuk.github.io/interf/index.html"
+github_username: shvabuk
+repository: shvabuk/interf
+google_analytics: UA-26894117-2
+# my settings
+author: Shvab Ostap
+
+# Build settings
+markdown: kramdown
+gems:
+  - jekyll-feed
+  - jekyll-autoprefixer
+  - jekyll-minifier
+exclude:
+  - Gemfile
+  - Gemfile.lock
+autoprefixer:
+  browsers:
+  - last 2 versions
+

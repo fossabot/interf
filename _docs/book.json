@@ -1,0 +1,27 @@
+{
+  "gitbook": "3.2.2",
+  "title": "Interf",
+  "author": "Shvab Ostap",
+  "plugins": ["theme-default", "-highlight", "edit-link", "github", "anchorjs", "ga"],
+  "pluginsConfig": {
+    "sharing": {
+      "facebook": true,
+      "twitter": true,
+      "google": true,
+      "weibo": false,
+      "instapaper": false,
+      "vk": false,
+      "all": ["facebook", "google", "twitter", "weibo", "instapaper", "vk"]
+    },
+    "edit-link": {
+      "base": "https://github.com/shvabuk/interf/tree/gh-pages/docs",
+      "label": "Edit This Page"
+    },
+    "github": {
+      "url": "https://github.com/shvabuk/interf"
+    },
+    "ga": {
+      "token": "UA-26894117-2"
+    }
+  }
+}
