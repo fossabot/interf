@@ -2,7 +2,15 @@
   "gitbook": "3.2.2",
   "title": "Interf",
   "author": "Shvab Ostap",
-  "plugins": ["theme-default", "-highlight", "github", "anchorjs", "ga"],
+  "plugins": [
+    "theme-default",
+    "-highlight",
+    "-livereload",
+    "github",
+    "anchorjs",
+    "ga",
+    "edit-link"
+  ],
   "pluginsConfig": {
     "sharing": {
       "facebook": true,
@@ -14,7 +22,7 @@
       "all": ["facebook", "google", "twitter", "weibo", "instapaper", "vk"]
     },
     "edit-link": {
-      "base": "https://github.com/shvabuk/interf/tree/gh-pages/docs",
+      "base": "https://github.com/shvabuk/interf/tree/gh-pages/_docs",
       "label": "Edit This Page"
     },
     "github": {

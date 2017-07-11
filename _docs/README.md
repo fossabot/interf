@@ -33,7 +33,8 @@ Quackable.isInterfaceOf(donald); // true
 
 * :fa-download: [Core build](https://raw.githubusercontent.com/shvabuk/interf/master/dist/interf-core.js) ([~2kB gzipped](https://raw.githubusercontent.com/shvabuk/interf/master/dist/interf-core.min.js))
 * :fa-download: [Full build](https://raw.githubusercontent.com/shvabuk/interf/master/dist/interf.js) ([~4kB gzipped](https://raw.githubusercontent.com/shvabuk/interf/master/dist/interf.min.js))
-* :fa-cloud-download: [CDN copies](#)
+* :fa-cloud-download: [CDN jsdelivr](https://cdn.jsdelivr.net/npm/interf)
+* :fa-cloud-download: [CDN unpkg](https://unpkg.com/interf/dist/interf.min.js)
 
 ## Installation
 
