@@ -1,6 +1,6 @@
 # Disscussions
 
-There are questions, answers to which will help to determine the direction of the further development of the library. [Join in discussion](//github.com/shvabuk/interf/wiki).
+There are questions, answers to which will help to determine the direction of the further development of the library. [Join in discussion](https://github.com/shvabuk/interf/wiki).
 
 1. Will be debug panel like Vue.js devtools useful?
 2. Will be implementation/removing in/from multiple targets useful? interf.implement().in(**array|coma separated**)

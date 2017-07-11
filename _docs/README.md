@@ -129,4 +129,4 @@ Tested in:
 
 ## License
 
-Interf is released under the [MIT license](//raw.githubusercontent.com/shvabuk/interf/master/LICENSE.txt)
+Interf is released under the [MIT license](https://raw.githubusercontent.com/shvabuk/interf/master/LICENSE.txt)
