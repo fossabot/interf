@@ -76,6 +76,7 @@ interf.configure({
   mixin: {
     // warn: false, // if not defined, will be same as in parent scope
     // debug: false, // if not defined, will be same as in parent scope
+    // callbacks: {}, // if not defined, will be same as in parent scope
     createInit: true, // create initMixins method in target prototype
     interfaces: true,
     replace: true,
