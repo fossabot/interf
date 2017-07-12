@@ -1005,6 +1005,25 @@ class MInterfaced extends LInterfaced {}
 
 var objectInterfaced = new MInterfaced();
 
+// prepare class M with interfaces A-L
+
+var AInterfaceO = interf.create('AInterfaceO');
+var BInterfaceO = interf.create('BInterfaceO');
+var CInterfaceO = interf.create('CInterfaceO');
+var DInterfaceO = interf.create('DInterfaceO');
+var EInterfaceO = interf.create('EInterfaceO');
+var FInterfaceO = interf.create('FInterfaceO');
+var GInterfaceO = interf.create('GInterfaceO');
+var HInterfaceO = interf.create('HInterfaceO');
+var KInterfaceO = interf.create('KInterfaceO');
+var LInterfaceO = interf.create('LInterfaceO');
+var MInterfacedO = interf
+  .implement(AInterfaceO, BInterfaceO, CInterfaceO, DInterfaceO, EInterfaceO,
+    FInterfaceO, GInterfaceO, HInterfaceO, KInterfaceO, LInterfaceO)
+  .in(class MInterfacedO {});
+
+var objectOnlyInterfaced = new MInterfacedO();
+
 // test methods
 
 function isInterfaceOrConstructor(target, instance) {
@@ -1040,6 +1059,18 @@ objectClassed instanceof KClassed;
 objectClassed instanceof LClassed;
 objectClassed instanceof MClassed;
 
+AInterfaceO.isInterfaceOf(objectOnlyInterfaced);
+BInterfaceO.isInterfaceOf(objectOnlyInterfaced);
+CInterfaceO.isInterfaceOf(objectOnlyInterfaced);
+DInterfaceO.isInterfaceOf(objectOnlyInterfaced);
+EInterfaceO.isInterfaceOf(objectOnlyInterfaced);
+FInterfaceO.isInterfaceOf(objectOnlyInterfaced);
+GInterfaceO.isInterfaceOf(objectOnlyInterfaced);
+HInterfaceO.isInterfaceOf(objectOnlyInterfaced);
+KInterfaceO.isInterfaceOf(objectOnlyInterfaced);
+LInterfaceO.isInterfaceOf(objectOnlyInterfaced);
+objectOnlyInterfaced instanceof MInterfacedO;
+
 isInterfaceOrConstructor(AInterface, objectInterfaced);
 isInterfaceOrConstructor(BInterfaced, objectInterfaced);
 isInterfaceOrConstructor(CInterfaced, objectInterfaced);
@@ -1063,3 +1094,15 @@ isInterfaceOrConstructor(HClassed, objectClassed);
 isInterfaceOrConstructor(KClassed, objectClassed);
 isInterfaceOrConstructor(LClassed, objectClassed);
 isInterfaceOrConstructor(MClassed, objectClassed);
+
+isInterfaceOrConstructor(AInterfaceO, objectOnlyInterfaced);
+isInterfaceOrConstructor(BInterfaceO, objectOnlyInterfaced);
+isInterfaceOrConstructor(CInterfaceO, objectOnlyInterfaced);
+isInterfaceOrConstructor(DInterfaceO, objectOnlyInterfaced);
+isInterfaceOrConstructor(EInterfaceO, objectOnlyInterfaced);
+isInterfaceOrConstructor(FInterfaceO, objectOnlyInterfaced);
+isInterfaceOrConstructor(GInterfaceO, objectOnlyInterfaced);
+isInterfaceOrConstructor(HInterfaceO, objectOnlyInterfaced);
+isInterfaceOrConstructor(KInterfaceO, objectOnlyInterfaced);
+isInterfaceOrConstructor(LInterfaceO, objectOnlyInterfaced);
+isInterfaceOrConstructor(MInterfacedO, objectOnlyInterfaced);

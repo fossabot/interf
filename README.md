@@ -23,7 +23,8 @@ Quackable.isInterfaceOf(donald); // true
 
 * [Core build](//raw.githubusercontent.com/shvabuk/interf/master/dist/interf-core.js) ([~2kB gzipped](//raw.githubusercontent.com/shvabuk/interf/master/dist/interf-core.min.js))
 * [Full build](//raw.githubusercontent.com/shvabuk/interf/master/dist/interf.js) ([~4kB gzipped](//raw.githubusercontent.com/shvabuk/interf/master/dist/interf.min.js))
-* [CDN copies](#)
+* [CDN jsdelivr](https://cdn.jsdelivr.net/npm/interf)
+* [CDN unpkg](https://unpkg.com/interf/dist/interf.min.js)
 
 ## Installation
 
