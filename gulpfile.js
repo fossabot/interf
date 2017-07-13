@@ -337,7 +337,7 @@ gulp.task('test-karma', ['build-test'], callback => {
 
 gulp.task(`test`, ['test-karma'], () => {});
 
-gulp.task(`test-simple`, callback => {
+gulp.task(`test-simple`, done => {
   try {
     new KarmaServer(
       {

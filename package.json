@@ -39,7 +39,7 @@
   "scripts": {
     "test": "gulp test && node ./test/node_qunit.js",
     "dev": "nodemon --watch webpack.config.js ./node_modules/.bin/webpack-dev-server --env=dev",
-    "test:simple": "gulp test-simple",
+    "test:simple": "gulp test-simple && node ./test/node_qunit.js",
     "build": "gulp",
     "publish": "git push && npm publish"
   },
