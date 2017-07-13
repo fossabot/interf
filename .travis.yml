@@ -1,0 +1,22 @@
+language: node_js
+node_js:
+  - 6
+
+branches:
+  only:
+    - master
+
+script:
+  make riot
+
+sudo: false
+
+after_success:
+  npm run test
+
+cache:
+  directories:
+    - node_modules
+
+notifications:
+    email: false
