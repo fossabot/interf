@@ -4,6 +4,7 @@
 
 .eslintrc
 .gitignore
+.travis.uml
 gulpfile.js
 karma.conf.js
 template.html

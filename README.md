@@ -1,8 +1,8 @@
 # [INTERF](https://shvabuk.github.io/interf)
 
-Interf is [fast](performance.md) and small javascript library.
+Interf is [fast](https://shvabuk.github.io/interf/docs/performance.html) and small javascript library.
 It makes possible to determine whether a object is an instantiated of a class that implements an interface.
-And it is possible to copy class and class.prototype properties by [mix().in()](api/mixin/mix-in.md) too.
+And it is possible to copy class and class.prototype properties by [mix().in()](https://shvabuk.github.io/interf/docs/api/mixin/mix-in.md) too.
 
 ## [API Docs](https://shvabuk.github.io/interf/docs)
 
