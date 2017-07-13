@@ -507,27 +507,27 @@ return :O: interf;
 <tbody>
 <tr>
 <td style="text-align:left">debug</td>
-<td style="text-align:left">:B: Boolean. Optional. (default: false) Option to call callbacks.debug (avialable only in full build)</td>
+<td style="text-align:left">:B: Boolean. Optional. (default: <code>false</code>) Option to call callbacks.debug (avialable only in full build)</td>
 </tr>
 <tr>
 <td style="text-align:left">warn</td>
-<td style="text-align:left">:B: Boolean. Optional. (default: false) Option to call callbacks.warn.</td>
+<td style="text-align:left">:B: Boolean. Optional. (default: <code>false</code>) Option to call callbacks.warn.</td>
 </tr>
 <tr>
 <td style="text-align:left">afterImplement</td>
-<td style="text-align:left">:B: Boolean. Optional. (default: false) Option to call callbacks.afterImplement.</td>
+<td style="text-align:left">:B: Boolean. Optional. (default: <code>false</code>) Option to call callbacks.afterImplement.</td>
 </tr>
 <tr>
 <td style="text-align:left">callbacks.debug</td>
-<td style="text-align:left">:F: Function. Optional. (default: (data) =&gt; {if (typeof console === &apos;object&apos; &amp;&amp; console.log) console.log(data.message, data);}) (avialable only in full build)</td>
+<td style="text-align:left">:F: Function. Optional. (default: <code>(data) =&gt; {if (typeof console === &apos;object&apos; &amp;&amp; console.log) console.log(data.message, data);}</code>) (avialable only in full build)</td>
 </tr>
 <tr>
 <td style="text-align:left">callbacks.warn</td>
-<td style="text-align:left">:F: Function. Optional. (default: (data) =&gt; {if (typeof console === &apos;object&apos; &amp;&amp; console.warn) console.warn(data.message);}) May be called by <a href="remove-in.html">remove().in()</a>, <a href="empty-in.html">empty().in()</a> or <a href="../mixin/mix-in.html">mix().in()</a> methods</td>
+<td style="text-align:left">:F: Function. Optional. (default: <code>(data) =&gt; {if (typeof console === &apos;object&apos; &amp;&amp; console.warn) console.warn(data.message);}</code>) May be called by <a href="remove-in.html">remove().in()</a>, <a href="empty-in.html">empty().in()</a> or <a href="../mixin/mix-in.html">mix().in()</a> methods</td>
 </tr>
 <tr>
 <td style="text-align:left">callbacks.afterImplement</td>
-<td style="text-align:left">:F: Function. Optional. (default: (classInterfaces, Class, interfaces) =&gt; {})</td>
+<td style="text-align:left">:F: Function. Optional. (default: <code>(classInterfaces, Class, interfaces) =&gt; {}</code>)</td>
 </tr>
 <tr>
 <td style="text-align:left">mixin</td>
@@ -535,7 +535,7 @@ return :O: interf;
 </tr>
 <tr>
 <td style="text-align:left">descriptor</td>
-<td style="text-align:left">:O: PlainObject. Optional. (default: { configurable: true }) The descriptor for the &apos;<a href="interfaces_.html">__interfaces_</a>&apos; property being defined for target class and parents classes as static property. This value will not inherit properties from parent config.</td>
+<td style="text-align:left">:O: PlainObject. Optional. (default: <code>{ configurable: true }</code>) The descriptor for the &apos;<a href="interfaces_.html">__interfaces_</a>&apos; property being defined for target class and parents classes as static property. This value will not inherit properties from parent config.</td>
 </tr>
 </tbody>
 </table>
@@ -550,11 +550,11 @@ return :O: interf;
 <tbody>
 <tr>
 <td style="text-align:left">configurable</td>
-<td style="text-align:left">:B: Boolean. Optional. (default: true) true if and only if the type of this property descriptor may be changed and if the property may be deleted from the corresponding object.</td>
+<td style="text-align:left">:B: Boolean. Optional. (default: <code>true</code>) true if and only if the type of this property descriptor may be changed and if the property may be deleted from the corresponding object.</td>
 </tr>
 <tr>
 <td style="text-align:left">enumerable</td>
-<td style="text-align:left">:B: Boolean. Optional. (default: false) true if and only if this property shows up during enumeration of the properties on the corresponding object.</td>
+<td style="text-align:left">:B: Boolean. Optional. (default: <code>false</code>) true if and only if this property shows up during enumeration of the properties on the corresponding object.</td>
 </tr>
 <tr>
 <td style="text-align:left">value</td>
@@ -562,15 +562,15 @@ return :O: interf;
 </tr>
 <tr>
 <td style="text-align:left">writable</td>
-<td style="text-align:left">:B: Boolean. Optional. (default: false) true if and only if the value associated with the property may be changed with an assignment operator.</td>
+<td style="text-align:left">:B: Boolean. Optional. (default: <code>false</code>) true if and only if the value associated with the property may be changed with an assignment operator.</td>
 </tr>
 <tr>
 <td style="text-align:left">get</td>
-<td style="text-align:left">:F: Function. Optional. (default: undefined) A function which serves as a getter for the property, or undefined if there is no getter. The function return will be used as the value of property.</td>
+<td style="text-align:left">:F: Function. Optional. (default: <code>undefined</code>) A function which serves as a getter for the property, or undefined if there is no getter. The function return will be used as the value of property.</td>
 </tr>
 <tr>
 <td style="text-align:left">set</td>
-<td style="text-align:left">:F: Function. Optional. (default: undefined) A function which serves as a setter for the property, or undefined if there is no setter. The function will receive as only argument the new value being assigned to the property.</td>
+<td style="text-align:left">:F: Function. Optional. (default: <code>undefined</code>) A function which serves as a setter for the property, or undefined if there is no setter. The function will receive as only argument the new value being assigned to the property.</td>
 </tr>
 </tbody>
 </table>
@@ -601,27 +601,27 @@ return :O: interf;
 </tr>
 <tr>
 <td style="text-align:left">createInit</td>
-<td style="text-align:left">:B: Boolean. Optional. (default: true) Create initMixins method in target prototype. initMixins method will create objects (instances) of mixins and copy all objects properties to target object. <a href="../mixin/mixinsinitiable.html">MixinsInitiable</a> interface will be added too.</td>
+<td style="text-align:left">:B: Boolean. Optional. (default: <code>true</code>) Create initMixins method in target prototype. initMixins method will create objects (instances) of mixins and copy all objects properties to target object. <a href="../mixin/mixinsinitiable.html">MixinsInitiable</a> interface will be added too.</td>
 </tr>
 <tr>
 <td style="text-align:left">interfaces</td>
-<td style="text-align:left">:B: Boolean. Optional. (default: true) Copy mixins interfaces to target.</td>
+<td style="text-align:left">:B: Boolean. Optional. (default: <code>true</code>) Copy mixins interfaces to target.</td>
 </tr>
 <tr>
 <td style="text-align:left">replace</td>
-<td style="text-align:left">:B: Boolean. Optional. (default: true) If properties with same names will be found in target and mixin, will be replaced by new (from mixin, prefer last).</td>
+<td style="text-align:left">:B: Boolean. Optional. (default: <code>true</code>) If properties with same names will be found in target and mixin, will be replaced by new (from mixin, prefer last).</td>
 </tr>
 <tr>
 <td style="text-align:left">notConfigurableNotWritableError</td>
-<td style="text-align:left">:B: Boolean. Optional. (default: true) If replace is set to true and will be found property with same name and target property will be not configurable and not writable, property will be tryed to defined. This will throw Error. If false, property will be not tryed to defined, also Error will be not throwed.</td>
+<td style="text-align:left">:B: Boolean. Optional. (default: <code>true</code>) If replace is set to true and will be found property with same name and target property will be not configurable and not writable, property will be tryed to defined. This will throw Error. If false, property will be not tryed to defined, also Error will be not throwed.</td>
 </tr>
 <tr>
 <td style="text-align:left">ignore.protoProps</td>
-<td style="text-align:left">:A: Array. Optional. (default: [&apos;constructor&apos;, &apos;apply&apos;, &apos;bind&apos;, &apos;call&apos;, &apos;isGenerator&apos;, &apos;toSource&apos;, &apos;toString&apos;, &apos;__proto__&apos;]) Class proptotype properties names that will be ignored anyway. New properties will be added to array.</td>
+<td style="text-align:left">:A: Array. Optional. (default: <code>[&apos;constructor&apos;, &apos;apply&apos;, &apos;bind&apos;, &apos;call&apos;, &apos;isGenerator&apos;, &apos;toSource&apos;, &apos;toString&apos;, &apos;__proto__&apos;]</code>) Class proptotype properties names that will be ignored anyway. New properties will be added to array.</td>
 </tr>
 <tr>
 <td style="text-align:left">ignore.staticProps</td>
-<td style="text-align:left">:A: Array. Optional. (default: [&apos;arguments&apos;, &apos;arity&apos;, &apos;caller&apos;, &apos;length&apos;, &apos;name&apos;, &apos;displayName&apos;, &apos;prototype&apos;, &apos;__proto__&apos;]) Class properties (static) names that will be ignored anyway. New properties will be added to array.</td>
+<td style="text-align:left">:A: Array. Optional. (default: <code>[&apos;arguments&apos;, &apos;arity&apos;, &apos;caller&apos;, &apos;length&apos;, &apos;name&apos;, &apos;displayName&apos;, &apos;prototype&apos;, &apos;__proto__&apos;]</code>) Class properties (static) names that will be ignored anyway. New properties will be added to array.</td>
 </tr>
 </tbody>
 </table>
@@ -682,7 +682,7 @@ return :O: interf;
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"interf.configure()","level":"2.1.6","depth":2,"next":{"title":"interf.utils","level":"2.1.7","depth":2,"path":"api/core/utils.md","ref":"api/core/utils.md","articles":[]},"previous":{"title":"interf.empty().in()","level":"2.1.5","depth":2,"path":"api/core/empty-in.md","ref":"api/core/empty-in.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-default","-highlight","-livereload","github","anchorjs","ga","edit-link","livereload"],"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"},"pluginsConfig":{"github":{"url":"https://github.com/shvabuk/interf"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"ga":{"configuration":"auto","token":"UA-26894117-2"},"sharing":{"facebook":true,"twitter":true,"google":true,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper","vk"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/shvabuk/interf/tree/gh-pages/_docs"},"theme-default":{"showLevel":false,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}},"anchorjs":{}},"theme":"default","author":"Shvab Ostap","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Interf","gitbook":"3.2.2"},"file":{"path":"api/core/configure.md","mtime":"2017-07-11T23:13:16.755Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-07-11T23:42:30.150Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"interf.configure()","level":"2.1.6","depth":2,"next":{"title":"interf.utils","level":"2.1.7","depth":2,"path":"api/core/utils.md","ref":"api/core/utils.md","articles":[]},"previous":{"title":"interf.empty().in()","level":"2.1.5","depth":2,"path":"api/core/empty-in.md","ref":"api/core/empty-in.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-default","-highlight","-livereload","github","anchorjs","ga","edit-link","livereload"],"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"},"pluginsConfig":{"github":{"url":"https://github.com/shvabuk/interf"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"ga":{"configuration":"auto","token":"UA-26894117-2"},"sharing":{"facebook":true,"twitter":true,"google":true,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper","vk"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/shvabuk/interf/tree/gh-pages/_docs"},"theme-default":{"showLevel":false,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}},"anchorjs":{}},"theme":"default","author":"Shvab Ostap","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Interf","gitbook":"3.2.2"},"file":{"path":"api/core/configure.md","mtime":"2017-07-13T00:12:37.223Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-07-12T22:19:43.204Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

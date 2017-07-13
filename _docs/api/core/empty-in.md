@@ -4,9 +4,9 @@
 
 ---
 > ```javascript
-interf.empty([options]).in(target);
-return :B: true|false;
-```
+> interf.empty([options]).in(target);
+> return :B: true|false;
+> ```
 > 
 > **options**  
 > Type: :O: PlainObject  

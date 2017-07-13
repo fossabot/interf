@@ -4,9 +4,9 @@
 
 ---
 > ```javascript
-Interface.isInterfaceOf(object);
-return :B: true|false;
-```
+> Interface.isInterfaceOf(object);
+> return :B: true|false;
+> ```
 > **Interface**  
 > Type: :I: Interface (Object)  
 > Interface to test against.

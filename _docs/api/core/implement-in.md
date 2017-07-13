@@ -4,9 +4,9 @@
 
 ---
 > ```javascript
-interf.implement([Interface1[, Interface2[, ...[, InterfaceN]]]]).in(target);
-return :C: target|target.constructor;
-```
+> interf.implement([Interface1[, Interface2[, ...[, InterfaceN]]]]).in(target);
+> return :C: target|target.constructor;
+> ```
 > 
 > **InterfaceN**  
 > Type: :I: Interface  
@@ -28,9 +28,9 @@ return :C: target|target.constructor;
 ---
 
 > ```javascript
-interf.implement(interfacesArray[, options]).in(target);
-return :C: target|target.constructor;
-```
+> interf.implement(interfacesArray[, options]).in(target);
+> return :C: target|target.constructor;
+> ```
 > 
 > **interfacesArray**  
 > Type: :A: Array  

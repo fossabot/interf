@@ -4,9 +4,9 @@
 
 ---
 > ```javascript
-interf.remove(Interface1[, Interface2[, ...[, InterfaceN]]]).in(target);
-return :B: true|false;
-```
+> interf.remove(Interface1[, Interface2[, ...[, InterfaceN]]]).in(target);
+> return :B: true|false;
+> ```
 > 
 > **InterfaceN**  
 > Type: :I: Interface  
@@ -26,9 +26,9 @@ return :B: true|false;
 
 ---
 > ```javascript
-interf.remove(interfacesArray[, options]).in(target);
-return :B: true|false;
-```
+> interf.remove(interfacesArray[, options]).in(target);
+> return :B: true|false;
+> ```
 > 
 > **interfacesArray**  
 > Type: :A: Array  

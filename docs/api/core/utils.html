@@ -498,7 +498,7 @@ $(function() {
 interf.utils.getProto = Object.getPrototypeOf || (obj =&gt; obj.__proto__);
 </code></pre>
 <h5 id="getsymbolsobject">getSymbols(object)</h5>
-<p>get symbols, if method Object.getOwnPropertySymbols not provided, will return empty array</p>
+<p>get symbols, if method <code>Object.getOwnPropertySymbols</code> not provided, will return empty array</p>
 <pre><code class="lang-javascript">// realization
 interf.utils.getSymbols = Object.getOwnPropertySymbols || (() =&gt; []);
 </code></pre>
@@ -513,7 +513,7 @@ console.log(target); // [1,2,3,4]
 result === target // true
 </code></pre>
 <h5 id="mergeobjectstarget-source">mergeObjects(target, source)</h5>
-<p>merge source object values in target object recursively, arrays merged by addArray (used for assignObjects())</p>
+<p>merge source object values in target object recursively, arrays merged by addArray (used for <code>assignObjects()</code>)</p>
 <pre><code class="lang-javascript">// usage
 const target = {
     debug: true,
@@ -531,7 +531,7 @@ console.log(JSON.stringify(target)); // {debug: false, mixin: { warn: false }, w
 result === target // true
 </code></pre>
 <h5 id="assignobjectsobject1-object2--objectn">assignObjects(object1[, object2[, ...[, objectN]]]])</h5>
-<p>merge objects values in new obj, arrays merged by addArray, new empty object {} will be assigned firstly underhood (same speed as in Object.assign(), but IE 9+ supported)</p>
+<p>merge objects values in new obj, arrays merged by addArray, new empty object <code>{}</code> will be assigned firstly underhood (same speed as <code>Object.assign()</code>, but IE 9+ supported)</p>
 <pre><code class="lang-javascript">// usage
 const object1 = {
     debug: true,
@@ -592,7 +592,7 @@ result === object1 // false
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"interf.utils","level":"2.1.7","depth":2,"next":{"title":"⚡ Class.__interfaces_","level":"2.1.8","depth":2,"path":"api/core/interfaces_.md","ref":"api/core/interfaces_.md","articles":[]},"previous":{"title":"interf.configure()","level":"2.1.6","depth":2,"path":"api/core/configure.md","ref":"api/core/configure.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-default","-highlight","-livereload","github","anchorjs","ga","edit-link","livereload"],"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"},"pluginsConfig":{"github":{"url":"https://github.com/shvabuk/interf"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"ga":{"configuration":"auto","token":"UA-26894117-2"},"sharing":{"facebook":true,"twitter":true,"google":true,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper","vk"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/shvabuk/interf/tree/gh-pages/_docs"},"theme-default":{"showLevel":false,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}},"anchorjs":{}},"theme":"default","author":"Shvab Ostap","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Interf","gitbook":"3.2.2"},"file":{"path":"api/core/utils.md","mtime":"2017-07-11T23:13:16.755Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-07-11T23:42:30.150Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"interf.utils","level":"2.1.7","depth":2,"next":{"title":"⚡ Class.__interfaces_","level":"2.1.8","depth":2,"path":"api/core/interfaces_.md","ref":"api/core/interfaces_.md","articles":[]},"previous":{"title":"interf.configure()","level":"2.1.6","depth":2,"path":"api/core/configure.md","ref":"api/core/configure.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-default","-highlight","-livereload","github","anchorjs","ga","edit-link","livereload"],"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"},"pluginsConfig":{"github":{"url":"https://github.com/shvabuk/interf"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"ga":{"configuration":"auto","token":"UA-26894117-2"},"sharing":{"facebook":true,"twitter":true,"google":true,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper","vk"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/shvabuk/interf/tree/gh-pages/_docs"},"theme-default":{"showLevel":false,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}},"anchorjs":{}},"theme":"default","author":"Shvab Ostap","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Interf","gitbook":"3.2.2"},"file":{"path":"api/core/utils.md","mtime":"2017-07-13T00:20:10.039Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-07-12T22:19:43.204Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

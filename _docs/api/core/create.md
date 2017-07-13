@@ -4,9 +4,9 @@
 
 ---
 > ```javascript
-interf.create(interfaceName [, extends]);
-return :I: new Interface();
-```
+> interf.create(interfaceName [, extends]);
+> return :I: new Interface();
+> ```
 > **interfaceName**  
 > Type: :S: String  
 > A interface name.
@@ -25,9 +25,9 @@ return :I: new Interface();
 
 ---
 > ```javascript
-interf.create(properties);
-return :I: new Interface();
-```
+> interf.create(properties);
+> return :I: new Interface();
+> ```
 > **properties**  
 > Type: :O: PlainObject  
 > ##### A map of properties to pass to the method.

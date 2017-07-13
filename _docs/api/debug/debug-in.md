@@ -4,9 +4,9 @@
 
 ---
 > ```javascript
-interf.debug([infoType1[, infoType2[, ...[, infoTypeN]]]]).in(target);
-return :O: PlainObject;
-```
+> interf.debug([infoType1[, infoType2[, ...[, infoTypeN]]]]).in(target);
+> return :O: PlainObject;
+> ```
 > 
 > **infoTypeN**  
 > Type: :S: String  
@@ -28,9 +28,9 @@ return :O: PlainObject;
 ---
 
 > ```javascript
-interf.debug(infoTypeArray).in(target);
-return :O: PlainObject;
-```
+> interf.debug(infoTypeArray).in(target);
+> return :O: PlainObject;
+> ```
 > 
 > **infoTypeArray**  
 > Type: :A: Array  

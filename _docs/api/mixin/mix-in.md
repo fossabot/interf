@@ -4,9 +4,9 @@
 
 ---
 > ```javascript
-interf.mix([source1[, source2[, ...[, sourceN]]]]).in(target);
-return :C: target|target.constructor;
-```
+> interf.mix([source1[, source2[, ...[, sourceN]]]]).in(target);
+> return :C: target|target.constructor;
+> ```
 > 
 > **sourceN**  
 > Type: :C: Class or :O: Class.prototype  
@@ -28,9 +28,9 @@ return :C: target|target.constructor;
 ---
 
 > ```javascript
-interf.mix(sourcesArray[, options]).in(target);
-return :C: target|target.constructor;
-```
+> interf.mix(sourcesArray[, options]).in(target);
+> return :C: target|target.constructor;
+> ```
 > 
 > **sourcesArray**  
 > Type: :A: Array  
