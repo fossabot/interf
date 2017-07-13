@@ -336,3 +336,20 @@ gulp.task('test-karma', ['build-test'], callback => {
 });
 
 gulp.task(`test`, ['test-karma'], () => {});
+
+gulp.task(`test-simple`, callback => {
+  try {
+    new KarmaServer(
+      {
+        configFile: path.join(__dirname, './karma.conf.js'),
+        files: testsFiles.concat(testFilesInterfs, ['test/karma-exec.js']),
+        browsers: ['Firefox'],
+      },
+      done
+    ).start();
+  } catch (e) {
+    console.error(e.message);
+  }
+});
+
+
