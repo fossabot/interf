@@ -4,7 +4,7 @@ Interf is [fast](performance.md) and small javascript library.
 It makes possible to determine whether a object is an instantiated of a class that implements an interface.
 And it is possible to copy class and class.prototype properties by :F: [mix().in()](api/mixin/mix-in.md) too.
 
-<a href="#"><img alt="Badge" src="https://img.shields.io/badge/interfaced-It is about 20% reliable and cooler-518a07.svg?style=flat-square"></a> <a href="#"><img alt="Badge" src="https://img.shields.io/badge/test-badge-518a07.svg?style=flat-square"></a> <a href="#"><img alt="Badge" src="https://img.shields.io/badge/test-badge-518a07.svg?style=flat-square"></a> <a href="#"><img alt="Badge" src="https://img.shields.io/badge/test-badge-518a07.svg?style=flat-square"></a> <a href="#"><img alt="Badge" src="https://img.shields.io/badge/test-badge-518a07.svg?style=flat-square"></a> <a href="#"><img alt="Badge" src="https://img.shields.io/badge/test-badge-518a07.svg?style=flat-square"></a> <a href="#"><img alt="Badge" src="https://img.shields.io/badge/test-badge-518a07.svg?style=flat-square"></a> <a href="#"><img alt="Badge" src="https://img.shields.io/badge/test-badge-518a07.svg?style=flat-square"></a>
+[![Build Status](https://travis-ci.org/shvabuk/interf.svg?branch=master)](https://travis-ci.org/shvabuk/interf)
 
 ## [API](https://shvabuk.github.io/interf/docs) symbols roadmap
 
