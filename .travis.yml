@@ -7,7 +7,7 @@ branches:
     - master
 
 script:
-  make riot
+  gulp
 
 sudo: false
 
