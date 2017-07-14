@@ -30,3 +30,4 @@ composer.lock
 /test/coverage
 /test/size
 !/test/size/README.md
+/_docs
