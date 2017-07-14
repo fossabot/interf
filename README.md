@@ -1,5 +1,7 @@
 # [INTERF](https://shvabuk.github.io/interf)
 
+[![Join the chat at https://gitter.im/interf/Lobby](https://badges.gitter.im/interf/Lobby.svg)](https://gitter.im/interf/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 Interf is [fast](https://shvabuk.github.io/interf/docs/performance.html) and small javascript library.
 It makes possible to determine whether a object is an instantiated of a class that implements an interface.
 And it is possible to copy class and class.prototype properties by [mix().in()](https://shvabuk.github.io/interf/docs/api/mixin/mix-in.md) too.
