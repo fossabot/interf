@@ -1,6 +1,7 @@
 # [INTERF](https://shvabuk.github.io/interf)
 
 [![Join the chat at https://gitter.im/interf/Lobby](https://badges.gitter.im/interf/Lobby.svg)](https://gitter.im/interf/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bhttps%3A%2F%2Fgithub.com%2Fshvabuk%2Finterf.svg?type=shield)](https://app.fossa.io/projects/git%2Bhttps%3A%2F%2Fgithub.com%2Fshvabuk%2Finterf?ref=badge_shield)
 
 Interf is [fast](https://shvabuk.github.io/interf/docs/performance.html) and small javascript library.
 It makes possible to determine whether a object is an instantiated of a class that implements an interface.
@@ -123,3 +124,6 @@ Tested in:
 ## License
 
 Interf is released under the [MIT license](//raw.githubusercontent.com/shvabuk/interf/master/LICENSE.txt)
+
+
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bhttps%3A%2F%2Fgithub.com%2Fshvabuk%2Finterf.svg?type=large)](https://app.fossa.io/projects/git%2Bhttps%3A%2F%2Fgithub.com%2Fshvabuk%2Finterf?ref=badge_large)
